@@ -1,6 +1,6 @@
 # NepaliCalendar
 
-.NETCore Nuget packeage with collection of functions to work with Date in **Bikram Sambat (B.S.)**.
+.NETCore Nuget package with collection of functions to work with Date in **Bikram Sambat (B.S.)**.
 
 ### Features:
 
