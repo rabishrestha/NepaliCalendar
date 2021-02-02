@@ -11,9 +11,14 @@
 ### Installation
 NepaliCalendar requires .NET Core 2.0 +. Install it using the Nuget Manager or run the following command in Package Manager Console
 
+```sh
 $ Install-Package NepaliCalendar.NETCORE
-Class & Methods available
+```
+
+### Class & Methods available
 The package has two class available. They are as follows:
+* NepaliCalendar
+* NepaliDate
 
 ### DateConverter
 This class contains static methods which can be used to convert the dates. They are as follows:
