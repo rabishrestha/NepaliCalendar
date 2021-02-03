@@ -103,7 +103,7 @@ New date in NepaliDate format
 * `public static DateTime Convert_BS2AD(string sDateInBS)`
 Converts date in B.S. to A.D.
 ##### Parameters
-"**sDateInBS**" (B.S. date in string, accepts Unicode Nepali and English)
+"**sDateInBS**" (B.S. date in string [e.g: **2077/01/01** OR **२०७७/०१/०१**], accepts Unicode Nepali and English)
 ##### Returns
 New A.D. date in DateTime format
 
