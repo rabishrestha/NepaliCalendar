@@ -27,14 +27,12 @@ Class to store Bikram Sambat Date. (B.S.) with following properties:
 * int Day (Day in B.S.)
 * WeekDay (Day of week i.e. 1->Sunday, 7->Saturday)
 
-### Functions
+#### Functions
 ------------
-* `public override string ToString()`
-
+* `public override string ToString()` 
 Returns NepaliDate converted as string in format yyyy/MM/dd
 
-* `public static int CompareTwoDates(NepaliDate Date1, NepaliDate Date2)`
-
+* `public static int CompareTwoDates(NepaliDate Date1, NepaliDate Date2)` 
 If Date1 (B.S.) is smaller returns -1, 0 for equal and 1 for greater >
 
 ### NepaliCalendar
@@ -44,14 +42,18 @@ This class contains static methods which can be used to convert the dates. They 
 
 #### Functions
 * `public static NepaliDate FixDate(string sDate)`
-
 Converts Unicode Nepali numbers to english if necessary and returns valid B.S. date.
 ##### Parameters
 Valid B.S. date in string
-
 ##### Returns
 Date in B.S. in NepaliDate. If length of date == 10 returns same date else returns 1970/01/01 B.S.
 
+* `public static string Get_Month_Name_Nepali(int iMonthInNumber)`
+Gets first day of month as integer [Calendar Function]
+##### Parameters
+"**iYear**" (Integer year), "**iMonth**" (Integer from 1 to 12)
+##### Returns
+Integer value of total days in a month
 ------------
 
 
