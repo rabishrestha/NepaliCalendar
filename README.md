@@ -33,7 +33,7 @@ Class to store Bikram Sambat Date. (B.S.) with following properties:
 Returns NepaliDate converted as string in format yyyy/MM/dd
 
 * `public static int CompareTwoDates(NepaliDate Date1, NepaliDate Date2)` 
-If Date1 (B.S.) is smaller returns -1, 0 for equal and 1 for greater >
+If Date1 (B.S.) is smaller returns -1, 0 for equal and 1 for greater
 
 ### NepaliCalendar
 This class contains static methods which can be used to convert the dates. They are as follows:
@@ -54,6 +54,7 @@ Gets first day of month as integer [Calendar Function]
 "**iYear**" (Integer year), "**iMonth**" (Integer from 1 to 12)
 ##### Returns
 Integer value of total days in a month
+
 ------------
 
 
