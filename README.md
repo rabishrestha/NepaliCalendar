@@ -86,6 +86,33 @@ Calculates the no of days between given dates in B.S.
 ##### Returns
 Integer value for number of days
 
+* `public static NepaliDate AddDaysInDateBS(string sDate, int iNoOfDays)`
+Add some days in given date in B.S.
+##### Parameters
+"**sDate**", "**iNoOfDays**" (B.S. date in string, accepts Unicode Nepali and English)
+##### Returns
+New date in NepaliDate format
+
+* `public static NepaliDate SubstractDaysInDateBS(string sDate, int iNoOfDays)`
+Substracts some days from given date in B.S.
+##### Parameters
+"**sDate**", "**iNoOfDays**" (B.S. date in string, accepts Unicode Nepali and English)
+##### Returns
+New date in NepaliDate format
+
+* `public static DateTime Convert_BS2AD(string sDateInBS)`
+Converts date in B.S. to A.D.
+##### Parameters
+"**sDateInBS**" (B.S. date in string, accepts Unicode Nepali and English)
+##### Returns
+New A.D. date in DateTime format
+
+* `public static NepaliDate Convert_AD2BS(DateTime dtDateInAD)`
+Converts date in A.D. to B.S.
+##### Parameters
+"**dtDateInAD**" -> A.D. Date in DateTime format
+##### Returns
+New B.S. date in NepaliDate format
+
+
 ------------
-
-
