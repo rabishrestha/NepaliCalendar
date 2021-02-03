@@ -16,6 +16,16 @@ Install-Package NepaliCalendarBS -Version 1.0.0
 ```
 
 ### Class & Methods available
+The package has one structure:
+* **CalendarDay**
+* WeekDay (Day of week i.e. 1->Sunday, 7->Saturday)
+* int YearBS (Year in B.S.)
+* int MonthBS (Month in B.S.)
+* int DayBS (Day in B.S.)
+* int YearAD (YearAD in A.D.)
+* int MonthAD (MonthAD in A.D.)
+* int DayAD (DayAD in A.D.)
+
 The package has two class available. They are as follows:
 * **NepaliDate**
 * **NepaliCalendar**
@@ -114,5 +124,12 @@ Converts date in A.D. to B.S.
 ##### Returns
 New B.S. date in NepaliDate format
 
+* `public static CalendarDay[,] MakeCalendar(int iYearBS, int iMonthBS)`
+Creates a calendar
+##### Parameters
+"**iYearBS**" -> Year in B.S.
+"**iMonthBS**" -> Month in B.S.
+##### Returns
+An Array of CalendarDay[6,7]
 
 ------------
