@@ -12,7 +12,7 @@
 NepaliCalendar requires .NET Core 2.0 +. Install it using the Nuget Manager or run the following command in Package Manager Console
 
 ```sh
-$ Install-Package NepaliCalendar.NETCORE
+Install-Package NepaliCalendarBS -Version 1.0.0
 ```
 
 ### Class & Methods available
@@ -27,17 +27,26 @@ Class to store Bikram Sambat Date. (B.S.) with following properties:
 * int Day (Day in B.S.)
 * WeekDay (Day of week i.e. 1->Sunday, 7->Saturday)
 
+### Functions
+------------
+* `public override string ToString()`
+
+Returns NepaliDate converted as string in format yyyy/MM/dd
+
+* `public static int CompareTwoDates(NepaliDate Date1, NepaliDate Date2)`
+
+If Date1 (B.S.) is smaller returns -1, 0 for equal and 1 for greater >
+
 ### NepaliCalendar
 This class contains static methods which can be used to convert the dates. They are as follows:
 
 ------------
 
-##### Function 
-`public static NepaliDate FixDate(string sDate)`
+#### Functions
+* `public static NepaliDate FixDate(string sDate)`
 
-##### Description
 Converts Unicode Nepali numbers to english if necessary and returns valid B.S. date.
-##### Parameters 
+##### Parameters
 Valid B.S. date in string
 
 ##### Returns
