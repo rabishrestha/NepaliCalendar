@@ -71,6 +71,21 @@ Calculates the date span (age) between two dates in Bikram Sambat (B.S.).
 "**sBSDate1**", "**sBSDate2**", "**bInNepali**"
 ##### Returns
 Age in Year Month Day as string. If InNepali = true, बर्ष महिना दिन
+
+* `public static int CalculateDaysFromRefYear(string sDateInBS)`
+Calculates the no of days between 1970/01/01 B.S. and given date in B.S.
+##### Parameters
+"**sDateInBS**" (B.S. date in string, accepts Unicode Nepali and English)
+##### Returns
+Integer value for number of days
+
+* `public static int CalculateDaysBetweenTwoBSDates(string sFirstDate, string sSecondDate)`
+Calculates the no of days between given dates in B.S.
+##### Parameters
+"**sFirstDate**", "**sSecondDate**" (B.S. date in string, accepts Unicode Nepali and English)
+##### Returns
+Integer value for number of days
+
 ------------
 
 
