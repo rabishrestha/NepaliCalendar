@@ -17,10 +17,17 @@ $ Install-Package NepaliCalendar.NETCORE
 
 ### Class & Methods available
 The package has two class available. They are as follows:
-* **NepaliCalendar**
 * **NepaliDate**
+* **NepaliCalendar**
 
-### DateConverter
+### NepaliDate
+Class to store Bikram Sambat Date. (B.S.) with following properties:
+* int Year (Year in B.S.)
+* int Month (Month in B.S.)
+* int Day (Day in B.S.)
+* WeekDay (Day of week i.e. 1->Sunday, 7->Saturday)
+
+### NepaliCalendar
 This class contains static methods which can be used to convert the dates. They are as follows:
 
 ------------
