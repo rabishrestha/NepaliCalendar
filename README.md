@@ -55,6 +55,22 @@ Gets first day of month as integer [Calendar Function]
 ##### Returns
 Integer value of total days in a month
 
+* `public static NepaliDate TodayBS()`
+Gets today B.S.
+##### Returns
+Date in Nepali Date format
+
+* `public static string TodayBS_InLongString()`
+Gets today B.S.
+##### Returns
+Date in Unicode Nepali Format (e.g. २०७७ साल श्रावण ३२ गते)
+
+* `public static string CalculateAge(string sBSDate1, string sBSDate2, bool bInNepali)`
+Calculates the date span (age) between two dates in Bikram Sambat (B.S.).
+##### Parameters
+"**sBSDate1**", "**sBSDate2**", "**bInNepali**"
+##### Returns
+Age in Year Month Day as string. If InNepali = true, बर्ष महिना दिन
 ------------
 
 
