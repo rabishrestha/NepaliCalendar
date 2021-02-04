@@ -9,11 +9,7 @@
 * Converts Date in Bikram Sambat (B.S.) from **1970 B.S. to 2201 B.S**.
 
 ### Installation
-NepaliCalendar requires .NET Core 2.0 +. Install it using the Nuget Manager or run the following command in Package Manager Console
-
-```sh
-Install-Package NepaliCalendarBS -Version 1.0.0
-```
+NepaliCalendar requires .NET Core 2.0 +. Install it using the Nuget Manager.
 
 ### Class & Methods available
 The package has one structure:
