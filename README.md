@@ -7,6 +7,7 @@
 * Convert BS dates to AD and vice versa
 * Validate if the English dates & Nepali Dates are correct
 * Converts Date in Bikram Sambat (B.S.) from **1970 B.S. to 2201 B.S**.
+* Generate an Array of CalendarDay[6,7] for given (Year, Month) B.S.
 
 ### Installation
 NepaliCalendar requires .NET Core 2.0 +. Install it using the Nuget Manager.
