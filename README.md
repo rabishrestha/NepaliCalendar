@@ -10,7 +10,7 @@
 * Generate an Array of CalendarDay[6,7] for given (Year, Month) B.S.
 
 ### Installation
-NepaliCalendar requires .NET Core 2.0 +. Install it using the Nuget Manager.
+NepaliCalendar is build on .NET Standard 2.0 so is compaitable to .NET Core 2.0 + or .NetFramework. Install it using the Nuget Manager.
 
 ### Class & Methods available
 The package has one structure:
