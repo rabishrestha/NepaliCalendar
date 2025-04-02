@@ -50,7 +50,7 @@ A class to store and manipulate Bikram Sambat (B.S.) dates.
       - Default (null): Standard format (e.g., "2081/01/01").
   - **Returns**: A string representation of the date. Returns an empty string if the date is 1970/01/01.
   - **Example**:
-    csharp
+    ```csharp
     var date = new NepaliDate(2081, 1, 1);
     Console.WriteLine(date.ToString());          // "2081/01/01"
     Console.WriteLine(date.ToString("nepali"));  // "२०८१ बैशाख १ गते"
@@ -72,7 +72,7 @@ A class to store and manipulate Bikram Sambat (B.S.) dates.
     - 0 if Date1 == Date2.
     - 1 if Date1 > Date2.
   - **Example**:
-    csharp
+    ```csharp
     var date1 = new NepaliDate(2081, 1, 1);
     var date2 = new NepaliDate(2081, 1, 2);
     Console.WriteLine(NepaliDate.CompareTwoDates(date1, date2)); // -1
@@ -88,7 +88,7 @@ A static utility class for B.S. date operations and conversions.
     - sDate: B.S. date string (e.g., "2081/01/01" or "२०८१/०१/०१").
   - **Returns**: A NepaliDate object. Returns 1970/01/01 if invalid or length ≠ 10.
   - **Example**:
-    csharp
+    ```csharp
     var date = NepaliCalendar.FixDate("२०८१/०१/०१");
     Console.WriteLine(date.ToString()); // "2081/01/01"
     
@@ -99,7 +99,7 @@ A static utility class for B.S. date operations and conversions.
     - iMonthInNumber: Month number (0–12; 0 = "-सबै-", 1–12 = month names).
   - **Returns**: Unicode Nepali month name (e.g., "बैशाख" for 1).
   - **Example**:
-    csharp
+    ```csharp
     Console.WriteLine(NepaliCalendar.Get_Month_Name_Nepali(1)); // "बैशाख"
     
 
@@ -107,7 +107,7 @@ A static utility class for B.S. date operations and conversions.
   - **Description**: Gets the current date in B.S.
   - **Returns**: A NepaliDate representing today’s date in B.S.
   - **Example**:
-    csharp
+    ```csharp
     var today = NepaliCalendar.TodayBS();
     Console.WriteLine(today.ToString("nepali")); // e.g., "२०८१ चैत्र १९ गते"
     
@@ -116,7 +116,7 @@ A static utility class for B.S. date operations and conversions.
   - **Description**: Gets today’s date in a long Nepali format.
   - **Returns**: Unicode Nepali string (e.g., "२०८१ साल चैत्र १९ गते").
   - **Example**:
-    csharp
+    ```csharp
     Console.WriteLine(NepaliCalendar.TodayBS_InLongString()); // e.g., "२०८१ साल चैत्र १९ गते"
     
 
@@ -128,7 +128,7 @@ A static utility class for B.S. date operations and conversions.
     - bInNepali: true for Nepali output, false for English.
   - **Returns**: Age as a string (e.g., "5 बर्ष 2 महिना 3 दिन" or "5 Year 2 Month 3 Day").
   - **Example**:
-    csharp
+    ```csharp
     var age = NepaliCalendar.CalculateAge("2076/01/01", "2081/01/01", true);
     Console.WriteLine(age); // "५ बर्ष ० महिना ० दिन"
     
@@ -139,7 +139,7 @@ A static utility class for B.S. date operations and conversions.
     - sDateInBS: B.S. date string.
   - **Returns**: Number of days as an integer.
   - **Example**:
-    csharp
+    ```csharp
     Console.WriteLine(NepaliCalendar.CalculateDaysFromRefYear("2081/01/01")); // e.g., 4086
     
 
@@ -150,7 +150,7 @@ A static utility class for B.S. date operations and conversions.
     - sSecondDate: Second B.S. date string.
   - **Returns**: Number of days as an integer.
   - **Example**:
-    csharp
+    ```csharp
     Console.WriteLine(NepaliCalendar.CalculateDaysBetweenTwoBSDates("2081/01/01", "2081/01/02")); // 1
     
 
@@ -161,7 +161,7 @@ A static utility class for B.S. date operations and conversions.
     - iNoOfDays: Number of days to add.
   - **Returns**: New NepaliDate.
   - **Example**:
-    csharp
+    ```csharp
     var newDate = NepaliCalendar.AddDaysInDateBS("2081/01/01", 10);
     Console.WriteLine(newDate.ToString()); // "2081/01/11"
     
@@ -173,7 +173,7 @@ A static utility class for B.S. date operations and conversions.
     - iNoOfDays: Number of days to subtract.
   - **Returns**: New NepaliDate.
   - **Example**:
-    csharp
+    ```csharp
     var newDate = NepaliCalendar.SubstractDaysInDateBS("2081/01/11", 10);
     Console.WriteLine(newDate.ToString()); // "2081/01/01"
     
@@ -184,7 +184,7 @@ A static utility class for B.S. date operations and conversions.
     - sDateInBS: B.S. date string (e.g., "2081/01/01" or "२०८१/०१/०१").
   - **Returns**: A DateTime object in A.D.
   - **Example**:
-    csharp
+    ```csharp
     var adDate = NepaliCalendar.Convert_BS2AD("2081/01/01");
     Console.WriteLine(adDate.ToString("yyyy-MM-dd")); // "2024-04-14"
     
@@ -195,7 +195,7 @@ A static utility class for B.S. date operations and conversions.
     - dtDateInAD: A.D. date as a DateTime.
   - **Returns**: A NepaliDate object in B.S.
   - **Example**:
-    csharp
+    ```csharp
     var bsDate = NepaliCalendar.Convert_AD2BS(new DateTime(2024, 4, 14));
     Console.WriteLine(bsDate.ToString()); // "2081/01/01"
     
@@ -207,7 +207,7 @@ A static utility class for B.S. date operations and conversions.
     - iMonthBS: Month in B.S. (1–12).
   - **Returns**: A CalendarDay[6,7] array.
   - **Example**:
-    csharp
+    ```csharp
     var calendar = NepaliCalendar.MakeCalendar(2081, 1);
     Console.WriteLine(calendar[0, 0].DayBS); // First Sunday’s day in Baishak 2081
     
